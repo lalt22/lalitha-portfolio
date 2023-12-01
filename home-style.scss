@@ -1,15 +1,23 @@
+@use "./partials/mixins";
+
 * {
     body {
+        display: flex;
+        flex-flow: column wrap;
         font-family: 'Space Grotesk', sans-serif;
         font-weight: lighter;
+        outline: 1px solid black;
+        @include mixins.default-page-length;
     }
     
     nav {
         display: flex;
+        @include mixins.default-page-length;
         border: 2px solid rgba(2, 86, 53, 0.377);
         padding: 20px;
         justify-content: space-around;
     }
+    
     
     .material-symbols-outlined {
       font-variation-settings:
@@ -21,37 +29,44 @@
       color: rgba(25.5, 42.7, 37.3);
     }
     
-    nav > a {
+    .nav-bar__item {
         text-decoration: none;
         color: rgba(25.5, 42.7, 37.3);
+
+        &_:hover {
+            text-decoration:underline;
+            color: grey
+        }
     }
-    
-    nav > a:hover {
-        text-decoration:underline;
-        color: grey
-    }
-    
-    .introduction-box {
+   
+    section {
         display: flex;
+        @include mixins.default-page-length;
+        justify-content: center;
         height: 300px;
-        justify-content: space-around;
-        align-items: center;
+    }
+    
+    .about-me {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        align-self: center;
         outline: 1px solid red;   
     }
     
-    .introduction__header {
+    .about-me__info {
         display: flex;
-        outline: 2px solid green;
-        column-gap: 0px;
         flex-flow: column wrap;
-        width: min-content;
+        outline: 2px solid green;
+        width: 300px;
     }
     
-    .introduction__header > h1 {
-        font-size: 70px;
+    .about-me__info--h1 {
+        font-size: 45px;
         outline: 1px solid coral;
     }
-    .introduction__header > h2 {
+    .about-me__info--h2 {
         outline: 1px solid blue;
         font-weight: lighter;
         font-size: x-large;
