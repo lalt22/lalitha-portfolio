@@ -1,0 +1,45 @@
+* body {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: lighter;
+}
+* nav {
+  display: flex;
+  border: 2px solid rgba(2, 86, 53, 0.377);
+  padding: 20px;
+  justify-content: space-around;
+}
+* .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  color: rgb(26, 43, 37);
+}
+* nav > a {
+  text-decoration: none;
+  color: rgb(26, 43, 37);
+}
+* nav > a:hover {
+  text-decoration: underline;
+  color: grey;
+}
+* .introduction-box {
+  display: flex;
+  height: 300px;
+  justify-content: space-around;
+  align-items: center;
+  outline: 1px solid red;
+}
+* .introduction__header {
+  display: flex;
+  outline: 2px solid green;
+  column-gap: 0px;
+  flex-flow: column wrap;
+  width: min-content;
+}
+* .introduction__header > h1 {
+  font-size: 70px;
+  outline: 1px solid coral;
+}
+* .introduction__header > h2 {
+  outline: 1px solid blue;
+  font-weight: lighter;
+  font-size: x-large;
+}
