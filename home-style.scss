@@ -5,9 +5,8 @@
         display: flex;
         flex-flow: column wrap;
         font-family: 'Space Grotesk', sans-serif;
-        font-weight: lighter;
-        outline: 1px solid black;
-        @include mixins.default-page-length;
+        justify-content: center;
+        @include mixins.default-nav-width;
     }
     
     nav {
@@ -33,17 +32,20 @@
         text-decoration: none;
         color: rgba(25.5, 42.7, 37.3);
 
-        &_:hover {
-            text-decoration:underline;
-            color: grey
-        }
+    }
+
+    .nav-bar__item:hover {
+        text-decoration:underline;
+        color: grey
     }
    
     section {
         display: flex;
         @include mixins.default-page-length;
         justify-content: center;
+        outline: 1px solid pink;
         height: 300px;
+        align-self: center;
     }
     
     .about-me {
@@ -51,8 +53,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-end;
-        align-self: center;
-        outline: 1px solid red;   
     }
     
     .about-me__info {
