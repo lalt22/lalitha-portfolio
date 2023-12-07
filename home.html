@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lalitha's Home</title>
     <link rel="stylesheet" href="home-style.css">
+    <script src="script.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <main>
@@ -46,22 +48,30 @@
             <h1 class="stack__info--h1">My Skills</h1>
         </div>
         <div class="stack__info stack__info__main-div">
-            <h3>Languages: </h3>
-            <ul>
-                <li>C</li>
-                <li>Java</li>
-                <li>Python</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-            </ul>
-            <h3>Software</h3>
-            <ul>
-                <li>Unreal Engine</li>
-                <li>IntelliJ</li>
-                <li>VSCode</li>
-                <li>GitHub</li>
-                <li>Confluence and Jira</li>
-            </ul>
+            <div class="stack__info--text">
+                <h3>Languages: </h3>
+                <ul>
+                    <li>C</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                </ul>
+                <h3>Software:</h3>
+                <ul>
+                    <li>Unreal Engine</li>
+                    <li>IntelliJ</li>
+                    <li>VSCode</li>
+                    <li>GitHub</li>
+                    <li>Confluence and Jira</li>
+                </ul>
+            </div>
+           
+            <div class="stack__info--icons">
+                <i class="fab fa-java"></i>
+                <i class="fab fa-js"></i>
+
+            </div>
         </div>
     </section>
 
@@ -70,10 +80,22 @@
             <h1 class="projects__info--h1">My Portfolio</h1>
         </div>
         <div class="portfolio__gallery">
-            <a href="https://unsw-my.sharepoint.com/:f:/g/personal/z5259180_ad_unsw_edu_au/EqWZ8Y7uYrRCuSRsczprvLYBpM4Yp2Q4LE-kzES7W1QSJw?e=d1n0cd">
-                <img src="spellSync.png" alt="Spell Sync" width="300" height="300">
+            <div class="gallery__entry">
+                <a href="https://unsw-my.sharepoint.com/:f:/g/personal/z5259180_ad_unsw_edu_au/EqWZ8Y7uYrRCuSRsczprvLYBpM4Yp2Q4LE-kzES7W1QSJw?e=d1n0cd">
+                    <img class="gallery__image" src="spellSync.png" alt="Spell Sync">
+                </a>
+                <div class="image__description">An Unreal Engine 5 game combining futuristic and fantasy-style puzzle solving levels</div>
+            </div>
+            <div class="gallery__entry">
+                <a href="">
+                    <img class="gallery__image" src="blank.jpeg">
+                </a>
+                
+                <div class="image__description">Upcoming...</div>
             </a>
-            <div class="gallery__description">An Unreal Engine 5 game combining futuristic and fantasy-style puzzle solving levels</div>
+        </div>
+            
+           
         </div>
     </section>
 
@@ -82,13 +104,27 @@
             <h1 class="contact-me__info--h1">Contact Me</h1>
         </div>
         <div class="contact-me__info contact__details">
-            <h3>Email: </h3>
-
             <!--TODO: MAKE AN EMAIL POPUP-->
+            <a href=""><i class="fa fa-envelope icon"></i></a>
             <p>lalitha2seshadri@gmail.com</p>
+            
+            <!-- <button class="send-email__button" onclick="openForm()">Send Email</button> -->
 
-            <h3>GitHub:</h3>
-            <a class="github-link" href="https://github.com/lalt22">lalt22</a>
+            <!-- <div class="email-form__popup" id="myForm">
+                <form class="form__container">
+                    <h1>Send Email</h1>
+
+                    <label for="message">Message</label>
+                    <textarea id="message__textarea" rows="4" cols="20" name="messageDetails" placeholder="Write a message" required></textarea>
+
+                    <button type="submit" class="btn">Send Message</button>
+                    <button type="button" class="btn cancel__message" onclick="closeForm()">Close</button>
+
+                </form>
+            </div> -->
+            <a class="fa fa-github icon" href="https://github.com/lalt22"></a>
+            <p>@lalt22</p>
+            <!-- <a class="github-link" href="https://github.com/lalt22">lalt22</a> -->
         </div>
     </section>
 

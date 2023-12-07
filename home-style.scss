@@ -95,14 +95,14 @@
         justify-content: center;
         @include mixins.default-section-color;
         @include mixins.default-section-height;
-        border: 1px solid red;
     }
     
     //======= ABOUT-ME STYLING =====
     .about-me {
         @include mixins.default-flex-details;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 70px;
     }
 
     
@@ -121,7 +121,8 @@
         @include mixins.default-info-text;
         @include mixins.default-info-margins;
         @include mixins.default-border-radius;
-        padding: 15px;  
+        padding: 15px;
+        text-align: center;  
         @include mixins.default-info-width;
     }
     
@@ -145,19 +146,35 @@
     .stack__info {
         @include mixins.default-flex-details;
         @include mixins.default-info-align;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
+        text-align: center;  
         @include mixins.default-info-color;
         @include mixins.default-border-radius;
         padding: 15px;
         @include mixins.default-info-margins;
         @include mixins.default-info-width;
+        margin-right: auto;
+    }
+
+    .stack__info__main-div {
+        display: flex;
+        flex-flow: row wrap;
+        text-align: left;
+    }
+
+    .fab {
+        font-size: 30px;
+    }
+
+    .stack__info--text > ul {
+        list-style-type: none;
     }
 
     //======= PROJECTS STYLING =====
     .projects {
         @include mixins.default-section-color;
         justify-content: space-around;
-        flex-direction: row-reverse;
+        flex-flow:column wrap;      
         align-items: center;
     }
 
@@ -168,25 +185,49 @@
         @include mixins.default-info-color;
         @include mixins.default-border-radius;
         padding: 15px;
+        text-align: center;  
         @include mixins.default-info-margins;
         @include mixins.default-info-width;
+        margin-right: auto;
     }
 
     .portfolio__gallery {
         display: flex;
-        flex-flow: column wrap;
-        padding: 5px;
-        background-color: #f9f9f0;
-        @include mixins.default-border-radius;
+        flex-flow: row wrap;
         margin: 15px;
-        width:min-content;
+        width: auto;
+        gap: 10px;
     }
 
-    .portfolio__gallery:hover {
+    .gallery__entry {
+        @include mixins.default-border-radius;
+        background-color: #f9f9f0;
+        width: min-content;
+    }
+
+    .gallery__entry:hover {
         border: 3px solid #10826b;
         text-decoration: underline;
     }
 
+    .gallery__image {
+        padding: 5px;
+        
+        width: 200px;
+        height: 200px;
+    }
+
+    .image__description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 12px;
+        padding: 2px;
+    }
+
+    //====== CONTACT STYLING =====
     .contact-me {
         @include mixins.rotated-section-color;
         justify-content: space-around;
@@ -198,10 +239,48 @@
         @include mixins.default-flex-details;
         @include mixins.default-info-align;
         flex-flow: column wrap;
+        text-align: center;  
         @include mixins.default-info-color;
         @include mixins.default-border-radius;
         padding: 15px;
         @include mixins.default-info-margins;
         @include mixins.default-info-width;
+        margin-right:auto;
     }
+
+
+    .fa {
+        font-size: 50px;
+        text-decoration: none;
+        color: black;
+    }
+
+    
 }
+
+
+
+// ===== FORM STYLING - WILL NOT USE ======
+.email-form__popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid white;
+    z-index: 9;
+}
+
+.form__container {
+    max-width: fit-content;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+.form__container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
