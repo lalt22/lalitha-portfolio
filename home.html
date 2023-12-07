@@ -17,15 +17,23 @@
     </main>
     <!--Nav Bar-->
     <nav class="nav-bar">
-        <span class="material-symbols-outlined">raven</span>
-        <a class="nav-bar__item" href="home.html">About Me</a>
-        <a class="nav-bar__item" href="stack.html">Skills</a>
-        <a class="nav-bar__item" href="projects.html">Portfolio</a>
-        <a class="nav-bar__item" href="contact.html">Contact Me</a>
+        <img class="logo__img" src="hummingbird.png" width="40px" height="40px">
+        <div class="nav__items__div">
+            <a class="nav-bar__item" href="#about-me">About Me</a>
+            <a class="nav-bar__item" href="#stack">Skills</a>
+            <a class="nav-bar__item" href="#projects">Portfolio</a>
+            <a class="nav-bar__item" href="#contact-me">Contact Me</a>
+        </div>
+       
+        <div class="hamburger">
+            <span class="burger__bar__item"></span>
+            <span class="burger__bar__item"></span>
+            <span class="burger__bar__item"></span>
+        </div>
     </nav>
 
-    <section class="about-me">
-
+    <section id="about-me" class="about-me">
+        <img class="about-me__logo" src="hummingbird-clear.png" height="200px" width="200px">
         <div class="about-me__info">
             <h1 class="about-me__info--h1">Hi, I'm Lalitha.</h1>
             <h2 class="about-me__info--h2">Junior Software Engineer and Game Developer</h2>
@@ -33,21 +41,54 @@
         
     </section>
 
-    <section class="stack">
+    <section id="stack" class="stack">
         <div class="stack__info">
             <h1 class="stack__info--h1">My Skills</h1>
         </div>
-    </section>
-
-    <section class="projects">
-        <div class="projects__info">
-            <h1 class="projects__info--h1">My Portfolio</h1>
+        <div class="stack__info stack__info__main-div">
+            <h3>Languages: </h3>
+            <ul>
+                <li>C</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+            </ul>
+            <h3>Software</h3>
+            <ul>
+                <li>Unreal Engine</li>
+                <li>IntelliJ</li>
+                <li>VSCode</li>
+                <li>GitHub</li>
+                <li>Confluence and Jira</li>
+            </ul>
         </div>
     </section>
 
-    <section class="contact-me">
+    <section id="projects" class="projects">
+        <div class="projects__info">
+            <h1 class="projects__info--h1">My Portfolio</h1>
+        </div>
+        <div class="portfolio__gallery">
+            <a href="https://unsw-my.sharepoint.com/:f:/g/personal/z5259180_ad_unsw_edu_au/EqWZ8Y7uYrRCuSRsczprvLYBpM4Yp2Q4LE-kzES7W1QSJw?e=d1n0cd">
+                <img src="spellSync.png" alt="Spell Sync" width="300" height="300">
+            </a>
+            <div class="gallery__description">An Unreal Engine 5 game combining futuristic and fantasy-style puzzle solving levels</div>
+        </div>
+    </section>
+
+    <section id="contact-me" class="contact-me">
         <div class="contact-me__info">
             <h1 class="contact-me__info--h1">Contact Me</h1>
+        </div>
+        <div class="contact-me__info contact__details">
+            <h3>Email: </h3>
+
+            <!--TODO: MAKE AN EMAIL POPUP-->
+            <p>lalitha2seshadri@gmail.com</p>
+
+            <h3>GitHub:</h3>
+            <a class="github-link" href="https://github.com/lalt22">lalt22</a>
         </div>
     </section>
 

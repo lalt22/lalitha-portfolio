@@ -1,0 +1,55 @@
+@mixin xsmall-device {
+    @media only screen and (max-width: 600px) {
+        nav {
+            top: 5rem;
+            left: -100%;
+            flex-direction: column;
+            background-color: #fff;
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .hamburger {
+            display: block;
+        }
+    }
+}
+
+@mixin small-device {
+    @media only screen and (min-width: 601px) {
+        nav {
+            top: 5rem;
+            left: -100%;
+            flex-direction: column;
+            background-color: #fff;
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .hamburger {
+            display: block;
+        }
+    }
+}
+
+@mixin medium-device {
+    @media only screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin large-device {
+    @media only screen and (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin xlarge-device {
+    @media only screen and (min-width: 1200px) {
+        @content;
+    }
+}

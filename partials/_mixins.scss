@@ -1,7 +1,78 @@
-@mixin default-page-length {
-    width:90vw;
+@mixin default-page-width {
+    width:98vw;
 }
 
 @mixin default-nav-width {
-    width: 90vw ;
+    width: 98vw ;
+}
+
+@mixin default-flex-details {
+    display: flex;
+    align-self: center;
+}
+
+@mixin nav-bar-color {
+    background-color: #19c2a0;
+}
+
+@mixin nav-position-details {
+    position: fixed;
+    top: 0;
+    z-index: 1030;
+}
+
+@mixin mobile-nav-details {
+ 
+}
+
+
+@mixin default-info-width {
+    width: 33.3vw;
+}
+
+@mixin default-background-color {
+    background-color: #f9f9f0;
+}
+
+
+@mixin default-section-color {
+    background-color: #16A085;
+    background-image: linear-gradient(135deg, #16A085 5%, #ffffff 100%);
+}
+
+@mixin rotated-section-color {
+    background-color: #16A085;
+    background-image: linear-gradient(45deg, #16A085 5%, #ffffff 100%);
+}
+
+@mixin default-info-color {
+    background-color: #f9f9f0;
+    box-shadow: 12px 12px 2px 1px #16A085;
+}
+
+@mixin default-section-width {
+    width: 98vw;
+}
+
+@mixin default-section-height {
+    height: 85vh;
+}
+
+@mixin default-info-text {
+    .about-me__info--h1 {
+        color: #10826b;
+    }
+}
+
+@mixin default-info-align {
+    align-self: center;
+}
+
+@mixin default-info-margins {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+@mixin default-border-radius {
+    border-radius: 10px;
 }
