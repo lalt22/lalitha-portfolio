@@ -1,3 +1,6 @@
+@use "./media-qs";
+
+
 @mixin default-page-width {
     width:98vw;
 }
@@ -20,11 +23,6 @@
     top: 0;
     z-index: 1030;
 }
-
-@mixin mobile-nav-details {
- 
-}
-
 
 @mixin default-info-width {
     width: 33.3vw;
@@ -75,4 +73,58 @@
 
 @mixin default-border-radius {
     border-radius: 10px;
+}
+
+
+@mixin nav-bar-settings {
+
+    @include media-qs.large-device {
+        @include default-flex-details;
+        @include nav-position-details;
+        @include default-nav-width;
+        border: 2px solid #02563560;
+        padding: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    @include media-qs.xlarge-device {   
+        @include default-flex-details;
+        @include nav-position-details;
+        @include default-nav-width;
+        border: 2px solid rgba(2, 86, 53, 0.377);
+        padding: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@mixin hamburger-settings {
+    @include media-qs.xsmall-device {
+        @include default-flex-details;
+        @include nav-position-details;
+        @include default-nav-width;
+        border: 2px solid rgba(2, 86, 53, 0.377);
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    @include media-qs.small-device {
+        @include default-flex-details;
+        @include nav-position-details;
+        @include default-nav-width;        
+        border: 2px solid rgba(2, 86, 53, 0.377);
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    @include media-qs.medium-device {
+        @include default-flex-details;
+        @include nav-position-details;
+        @include default-nav-width;
+        border: 2px solid #02563560;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
 }

@@ -13,32 +13,58 @@
     
     //======= NAVIGATION STYLING =====
     nav {
-        @include mixins.default-flex-details;
-        @include mixins.nav-position-details;
-        @include mixins.default-nav-width;
-        @include media-qs.xsmall-device;
-        border: 2px solid rgba(2, 86, 53, 0.377);
-        padding: 20px;
-        flex-direction: row;
-        justify-content: space-between;
+        @include mixins.nav-bar-settings;
         @include mixins.nav-bar-color;
+        @include mixins.hamburger-settings;
     }
 
     .nav__items__div {
-        display: flex;
+        display: flex block;
+        @include media-qs.medium-device {
+            display: none;
+        }
+        @include media-qs.small-device {
+            display: none;
+        }
+        @include media-qs.xsmall-device {
+            display: none;
+        }
         align-self: center;
         justify-content: space-around;
         margin-left: auto;
-        width: 50rem;
+        width: 50vw;
     }
 
     .logo__img {
         margin-left: 50px;
+        align-self: center;
     }
 
     .hamburger {
-        display: block;
-        background-color: #101010;
+        display: none;
+        @include media-qs.xsmall-device {
+            display: block;
+        }
+
+        @include media-qs.small-device {
+            display: block;
+        }
+
+        @include media-qs.medium-device {
+            display: block;
+        }
+        margin: 20px;
+        width: 50px;
+        height: 50px; 
+        background: linear-gradient(
+            to bottom, 
+            #02563560, #02563560 20%, 
+            #19c2a0 20%, #19c2a0 40%, 
+            #02563560 40%, #02563560 60%, 
+            #19c2a0 60%, #19c2a0 80%, 
+            #02563560 80%, #02563560 100%
+        );
+
     }
 
     .hamburger__bar__item {
