@@ -7,7 +7,7 @@
         flex-flow: column wrap;
         font-family: 'Space Grotesk', sans-serif;
         justify-content: space-around;
-       @include mixins.default-page-width;
+        @include mixins.default-page-width;
         @include mixins.default-background-color;
     }
     
@@ -54,16 +54,17 @@
             display: block;
         }
         margin: 20px;
-        width: 50px;
-        height: 50px; 
+        width: 30px;
+        height: 30px; 
         background: linear-gradient(
             to bottom, 
             #02563560, #02563560 20%, 
-            #19c2a0 20%, #19c2a0 40%, 
+            #FFFFFF 20%, #FFFFFF 40%, 
             #02563560 40%, #02563560 60%, 
-            #19c2a0 60%, #19c2a0 80%, 
+            #FFFFFF 60%, #FFFFFF 80%, 
             #02563560 80%, #02563560 100%
         );
+        outline: none;
 
     }
 
@@ -103,6 +104,8 @@
         flex-direction: row;
         justify-content: center;
         gap: 70px;
+        background-color: #16A085;
+        background-image: linear-gradient(135deg, #16A085 5%, #ffffff 100%);
     }
 
     
@@ -140,14 +143,13 @@
         justify-content: space-around;
         flex-direction: row;
         align-items: flex-start;
-        @include mixins.rotated-section-color;
+        @include mixins.default-section-color;
     }
 
     .stack__info {
         @include mixins.default-flex-details;
         @include mixins.default-info-align;
         flex-flow: row wrap;
-        text-align: center;  
         @include mixins.default-info-color;
         @include mixins.default-border-radius;
         padding: 15px;
@@ -185,7 +187,7 @@
         @include mixins.default-info-color;
         @include mixins.default-border-radius;
         padding: 15px;
-        text-align: center;  
+       
         @include mixins.default-info-margins;
         @include mixins.default-info-width;
         margin-right: auto;
@@ -194,15 +196,19 @@
     .portfolio__gallery {
         display: flex;
         flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
         margin: 15px;
         width: auto;
-        gap: 10px;
+        gap: 50px;
+        width: 80vw;
     }
 
     .gallery__entry {
         @include mixins.default-border-radius;
         background-color: #f9f9f0;
         width: min-content;
+        height: min-content;
     }
 
     .gallery__entry:hover {
@@ -229,7 +235,7 @@
 
     //====== CONTACT STYLING =====
     .contact-me {
-        @include mixins.rotated-section-color;
+        @include mixins.default-section-color;
         justify-content: space-around;
         flex-direction: row;
         align-items: flex-start;
@@ -239,7 +245,6 @@
         @include mixins.default-flex-details;
         @include mixins.default-info-align;
         flex-flow: column wrap;
-        text-align: center;  
         @include mixins.default-info-color;
         @include mixins.default-border-radius;
         padding: 15px;

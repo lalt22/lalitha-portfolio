@@ -8,7 +8,7 @@
   background-color: #f9f9f0;
 }
 * nav {
-  background-color: #19c2a0;
+  background-color: #FFFFFF;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   * nav {
@@ -106,9 +106,10 @@
 * .hamburger {
   display: none;
   margin: 20px;
-  width: 50px;
-  height: 50px;
-  background: linear-gradient(to bottom, rgba(2, 86, 53, 0.3764705882), rgba(2, 86, 53, 0.3764705882) 20%, #19c2a0 20%, #19c2a0 40%, rgba(2, 86, 53, 0.3764705882) 40%, rgba(2, 86, 53, 0.3764705882) 60%, #19c2a0 60%, #19c2a0 80%, rgba(2, 86, 53, 0.3764705882) 80%, rgba(2, 86, 53, 0.3764705882) 100%);
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom, rgba(2, 86, 53, 0.3764705882), rgba(2, 86, 53, 0.3764705882) 20%, #FFFFFF 20%, #FFFFFF 40%, rgba(2, 86, 53, 0.3764705882) 40%, rgba(2, 86, 53, 0.3764705882) 60%, #FFFFFF 60%, #FFFFFF 80%, rgba(2, 86, 53, 0.3764705882) 80%, rgba(2, 86, 53, 0.3764705882) 100%);
+  outline: none;
 }
 @media only screen and (max-width: 600px) {
   * .hamburger {
@@ -146,8 +147,7 @@
   align-self: center;
   width: 98vw;
   justify-content: center;
-  background-color: #16A085;
-  background-image: linear-gradient(135deg, #16A085 5%, #ffffff 100%);
+  background-color: #FFFFFF;
   height: 80vh;
 }
 * .about-me {
@@ -156,6 +156,8 @@
   flex-direction: row;
   justify-content: center;
   gap: 70px;
+  background-color: #16A085;
+  background-image: linear-gradient(135deg, #16A085 5%, #ffffff 100%);
 }
 * .about-me__logo {
   align-self: center;
@@ -192,15 +194,13 @@
   justify-content: space-around;
   flex-direction: row;
   align-items: flex-start;
-  background-color: #16A085;
-  background-image: linear-gradient(45deg, #16A085 5%, #ffffff 100%);
+  background-color: #FFFFFF;
 }
 * .stack__info {
   display: flex;
   align-self: center;
   align-self: center;
   flex-flow: row wrap;
-  text-align: center;
   background-color: #f9f9f0;
   box-shadow: 12px 12px 2px 1px #16A085;
   border-radius: 10px;
@@ -222,8 +222,7 @@
   list-style-type: none;
 }
 * .projects {
-  background-color: #16A085;
-  background-image: linear-gradient(135deg, #16A085 5%, #ffffff 100%);
+  background-color: #FFFFFF;
   justify-content: space-around;
   flex-flow: column wrap;
   align-items: center;
@@ -237,7 +236,6 @@
   box-shadow: 12px 12px 2px 1px #16A085;
   border-radius: 10px;
   padding: 15px;
-  text-align: center;
   margin-left: 15px;
   margin-bottom: 15px;
   width: 33.3vw;
@@ -246,14 +244,18 @@
 * .portfolio__gallery {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
   margin: 15px;
   width: auto;
-  gap: 10px;
+  gap: 50px;
+  width: 80vw;
 }
 * .gallery__entry {
   border-radius: 10px;
   background-color: #f9f9f0;
   width: min-content;
+  height: min-content;
 }
 * .gallery__entry:hover {
   border: 3px solid #10826b;
@@ -274,8 +276,7 @@
   padding: 2px;
 }
 * .contact-me {
-  background-color: #16A085;
-  background-image: linear-gradient(45deg, #16A085 5%, #ffffff 100%);
+  background-color: #FFFFFF;
   justify-content: space-around;
   flex-direction: row;
   align-items: flex-start;
@@ -285,7 +286,6 @@
   align-self: center;
   align-self: center;
   flex-flow: column wrap;
-  text-align: center;
   background-color: #f9f9f0;
   box-shadow: 12px 12px 2px 1px #16A085;
   border-radius: 10px;
