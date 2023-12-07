@@ -132,7 +132,7 @@
         @include mixins.default-section-color;
         justify-content: space-around;
         flex-direction: row-reverse;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .projects__info {
